@@ -2277,26 +2277,7 @@ fn match_pattern(input_line: &str, pattern: &str) -> bool {
 }
 
 // Usage: echo <input_text> | your_program.sh -E <pattern>
-fn main() {
-    // You can use print statements as follows for debugging, they'll be visible when running tests.
-
-    if env::args().nth(1).unwrap() != "-E" {
-        process::exit(1);
-    }
-
-    let pattern = env::args().nth(2).unwrap();
-
-    let mut input_line = String::new();
-
-    io::stdin().read_line(&mut input_line).unwrap();
-
-    // Uncomment this block to pass the first stage
-    if match_pattern(&input_line, &pattern) {
-        process::exit(0)
-    } else {
-        process::exit(1)
-    }
-}
+fn main() {}
 
 #[cfg(test)]
 mod tests {
