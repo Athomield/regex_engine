@@ -2276,7 +2276,6 @@ fn match_pattern(input_line: &str, pattern: &str) -> bool {
     }
 }
 
-// Usage: echo <input_text> | your_program.sh -E <pattern>
 fn main() {}
 
 #[cfg(test)]
